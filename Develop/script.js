@@ -12,11 +12,13 @@ function writePassword() {
     alert("enter number less then 128");
     // lenghtOfPassword = prompt("question");
     writePassword();
-  } else if ( typeof lenghtOfPassword === "string" ){
-    alert("please enter a number");
-    // lenghtOfPassword = prompt("question");
-    writePassword();
   }
+
+//   else if ( typeof lenghtOfPassword === "string" ){
+//     alert("please ennter ");
+//     // lenghtOfPassword = prompt("question");
+//     writePassword();
+//   }
 
   //TO DO add regular expression that checks numbers only
 
