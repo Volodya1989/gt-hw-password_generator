@@ -3,34 +3,122 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var lenghtOfPassword = prompt("question");
+  var lenghtOfPassword = prompt("Please, enter desired lenght of new generated password.");
+
+  
   if (lenghtOfPassword < 8) {
-    alert("enter number more then ");
-    // lenghtOfPassword = prompt("question");
+    alert("Please, enter a number between 8 and 128.");
     writePassword();
   } else if (lenghtOfPassword > 128) {
-    alert("enter number less then 128");
-    // lenghtOfPassword = prompt("question");
+    alert("Please, enter a number between 8 and 128.");
     writePassword();
   }
 
-//   else if ( typeof lenghtOfPassword === "string" ){
-//     alert("please ennter ");
-//     // lenghtOfPassword = prompt("question");
-//     writePassword();
-//   }
+ 
+
+  //   else if ( typeof lenghtOfPassword === "string" ){
+  //     alert("please ennter ");
+  //     // lenghtOfPassword = prompt("question");
+  //     writePassword();
+  //   }
 
   //TO DO add regular expression that checks numbers only
 
-  var upperCase = confirm("uppercase");
-  var lowerCase = confirm("lowerCase");
-  var numbers = confirm("numbers");
-  var spCharecters = confirm("spCharecters");
+  
 
-  var upperLetters = ["A", "B", "C"]; //DEFGHIJKLMNOPQRSTUVWXYZ";
-  var lowerLetters = ["a", "b", "c"]; //defghijklmnopqrstuvwxyz";
-  var num = ["0", "1", "2"]; //3456789";
-  var characters = ["!", "@", "#"]; //$%^&*()_+~`|}{[]:;?><,./-=";
+  var upperCase = confirm("Click OK to confirm including uppercase characters.");
+  var lowerCase = confirm("Click OK to confirm including lowercase characters.");
+  var numbers = confirm("Click OK to confirm including numeric characters.");
+  var spCharecters = confirm("Click OK to confirm including special characters.");
+
+  var upperLetters = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
+  var lowerLetters = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ];
+  var num = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  var characters = [
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "~",
+    "`",
+    "|",
+    "}",
+    "{",
+    "[",
+    "]",
+    ":",
+    ";",
+    "?",
+    ">",
+    "<",
+    ",",
+    ".",
+    "/",
+    "-",
+    "=",
+  ];
 
   var userOption = [];
 
@@ -53,7 +141,6 @@ function writePassword() {
   if (userOption.length === 0) {
     alert("please select at least one character type");
     // lenghtOfPassword = prompt("question");
-    writePassword();
   }
 
   console.log(userOption);
@@ -62,10 +149,10 @@ function writePassword() {
 
   for (var i = 0; i < lenghtOfPassword; i++) {
     var ranNum = Math.floor(Math.random() * userOption.length);
-    console.log(ranNum);
+    // console.log(ranNum);
 
     password += userOption[ranNum];
-    console.log(password);
+    // console.log(password);
 
     // console.log(userOption[ranNum]);
   }
