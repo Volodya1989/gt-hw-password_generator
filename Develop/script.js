@@ -4,8 +4,10 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var lenghtOfPassword = prompt("Please, enter desired lenght of new generated password.");
+  
 
   
+
   if (lenghtOfPassword < 8) {
     alert("Please, enter a number between 8 and 128.");
     writePassword();
@@ -14,13 +16,19 @@ function writePassword() {
     writePassword();
   }
 
+//   var passLenght = parseInt(window.prompt("Please enter a valid number!"));
+
+//   if (lenghtOfPassword < 8) {
+//     alert("Please, enter a number between 8 and 128.");
+//     writePassword();
+//   } else if (lenghtOfPassword > 128) {
+//     alert("Please, enter a number between 8 and 128.");
+//     writePassword();
+//   }
+
  
 
-  //   else if ( typeof lenghtOfPassword === "string" ){
-  //     alert("please ennter ");
-  //     // lenghtOfPassword = prompt("question");
-  //     writePassword();
-  //   }
+ 
 
   //TO DO add regular expression that checks numbers only
 
@@ -122,7 +130,9 @@ function writePassword() {
 
   var userOption = [];
 
-  if (upperCase) {
+  function options(){
+
+   if (upperCase) {
     userOption = userOption.concat(upperLetters);
   }
 
@@ -137,10 +147,12 @@ function writePassword() {
   if (spCharecters) {
     userOption = userOption.concat(characters);
   }
+}
 
   if (userOption.length === 0) {
-    alert("please select at least one character type");
-    // lenghtOfPassword = prompt("question");
+    alert("Please select at least one type of characters.");
+    writePassword();
+
   }
 
   console.log(userOption);
