@@ -1,7 +1,7 @@
 
 # JavaScript: Password Generator
 
-![badmath](https://img.shields.io/badge/WEB-portfolio-blue)
+![badmath](https://img.shields.io/badge/PW-generator-orange)
 
 ![Contributor Covenant](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -11,7 +11,7 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-* [License](#license)
+* [License](#mit_license)
 * [URL](#url)
 
 
@@ -22,12 +22,9 @@
 
 ## Usage
 
-This Portfolio Website was done for personal use of the people who would like to have quick and nice way to show to employer who this person is and what kind of experience this person has.
+Password Generator Website was done for people who would like to create secure passwords for personal use.
 
-This web page was built by using best practices of web development including responsive images, responsive layout and modified components of bootstrap library.
-
-[Deployed Horiseon Website Link ](https://volodya1989.github.io/gt-hw-bootstrap-portfolio/)
-
+This web page was built by using HTML,  CSS and JavaScript.
 
 
 !["Password Generator" screenshot](./Assets/Images/image_home_page.png)
@@ -39,7 +36,7 @@ This web page was built by using best practices of web development including res
 
 This was a solo project comlepeted by Volodymyr Petrytsya as homework for the Georgia Tech, FullStack Flex program.
 
-## MIT License 
+## MIT_License 
 
 Copyright (c) [2020] [Volodymyr Petrytsya]
 
@@ -63,7 +60,7 @@ SOFTWARE.
 
 ## URL
 
-[Deployed Horiseon Website Link ](https://volodya1989.github.io/gt-hw-password_generator/)
+[Deployed Password Generator Website Link ](https://volodya1989.github.io/gt-hw-password_generator/)
 
  <!-- ## Contributing
 
