@@ -3,30 +3,29 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var lenghtOfPassword = prompt("Please, enter desired lenght of new generated password.");
+  var lenghtOfPassword = prompt(
+    "Please, enter desired lenght of new generated password."
+  );
+  var numericRegExp = /^[0-9]+$/;
+  var lengthValid = numericRegExp.test(lenghtOfPassword) && (lenghtOfPassword >= 8 && lenghtOfPassword <= 128);
 
-  
-  
-  if (lenghtOfPassword < 8) {
+  if (!lengthValid) {
     alert("Please, enter a number between 8 and 128.");
-    writePassword();
-  } else if (lenghtOfPassword > 128) {
-    alert("Please, enter a number between 8 and 128.");
-    writePassword();
+    return writePassword();
   }
-
- 
-
- 
 
   //TO DO add regular expression that checks numbers only
 
-  
-
-  var upperCase = confirm("Click OK to confirm including uppercase characters.");
-  var lowerCase = confirm("Click OK to confirm including lowercase characters.");
+  var upperCase = confirm(
+    "Click OK to confirm including uppercase characters."
+  );
+  var lowerCase = confirm(
+    "Click OK to confirm including lowercase characters."
+  );
   var numbers = confirm("Click OK to confirm including numeric characters.");
-  var spCharecters = confirm("Click OK to confirm including special characters.");
+  var spCharecters = confirm(
+    "Click OK to confirm including special characters."
+  );
 
   var upperLetters = [
     "A",
