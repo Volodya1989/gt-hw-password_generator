@@ -136,8 +136,8 @@ function writePassword() {
   }
 
   if (userOption.length === 0) {
-    alert("Please, select at least one type of characters.");
-    writePassword();
+    alert("please select at least one character type");
+    // lenghtOfPassword = prompt("question");
   }
 
   console.log(userOption);
