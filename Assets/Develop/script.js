@@ -11,7 +11,7 @@ function generatePassword() {
     "Please, enter desired lenght of new generated password."
   );
 
-  // add regular expression that checks numbers only
+  // advised by tutor to add regular expression that checks numbers only
 
   var numericRegExp = /^[0-9]+$/;
   var lengthValid =
